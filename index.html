@@ -2,25 +2,22 @@
 <html>
 <head>
   <title>Site</title>
-  <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css"/>
-	<link rel="stylesheet" type="text/css" href="/static/css/bootstrap-theme.min.css"/>
-</head>
-<body>
-	<include src="/public/header.html"></include>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<!-- <div class="container well">
-		<div class="input-group col-md-4 col-md-offset-4">
-	    <input type="text" class="form-control" placeholder="Username" id="username"><br><br>
-	    <input type="password" class="form-control" placeholder="Password" id="password"><br><br>
-	    <input type="button" value="Submit" class="btn btn-default pull-right" onclick="submit();">
-	  </div>
-	  <br><br>
-	  <div class="alert alert-success col-md-4 col-md-offset-4" id="alert" hidden></div>
-	</div> -->
-	<script src="/static/js/jquery-2.0.3.js"></script>
-	<script src="/static/js/bootstrap.min.js"></script>
-	<script src="/static/js/ajax.js"></script>
-	<script src="/static/js/tags.js"></script>
-	<script src="/static/js/index.js"></script>
+  <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css"/>
+  <link rel="stylesheet" type="text/css" href="/static/css/shop-homepage.css"/>
+</head>
+
+<body>
+	<include src="/public/header.html" id="header"></include>
+
+	<include src="/public/body.html" id="body"></include>
+	
+	<!-- <include src="/public/footer.html" id="footer"></include> -->
 </body>
+
+<script src="/static/js/jquery.js"></script>
+<script src="/static/js/bootstrap.min.js"></script>
+<script src="/static/js/ajax.js"></script>
+<script src="/static/js/tags.js"></script>
 </html>

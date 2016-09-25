@@ -1,28 +1,29 @@
-var ajax = new Ajax();
+var ajax = new Ajax()
 
 function Ajax() {}
 
-Ajax.prototype.post = function(url, data, callback) {
+Ajax.prototype.post = function(url, data, context, callback) {
 	$.ajax({
-		type				: 'POST', 
-		dataType		: 'json',
-		contentType	: 'application/json; charset=utf-8',
-		url					: url, 
+		contentType : 'application/json;charset=utf-8',
 		data				: data,
+		type 				: 'POST',
+		url					: url,
+		context			: context,
 		success			: callback,
-		error				: callbackError
-	});
+		error				: error
+	})
 }
 
-Ajax.prototype.get = function(url, callback) {
+Ajax.prototype.get = function(url, context, callback) {
 	$.ajax({
 		type 		: 'GET',
-		url  		: url,
-		success : callback,
-		error   : callbackError
-	});
+		url			: url,
+		context	: context,
+		success	: callback,
+		error		: error
+	})
 }
 
-function callbackError(xhr, error, exception) {
-	console.log(error);
+function error(xhr,status,error) {
+	console.log(status + '-->' + error)
 }
