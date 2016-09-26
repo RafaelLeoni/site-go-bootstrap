@@ -1,18 +1,21 @@
 include()
 
+function config() {
+	$('.carousel').carousel()
+}
+
 function include() {
-	var elements = document.getElementsByTagName('include')
+	let elements = document.getElementsByTagName('include')
+	
 	for (let element of elements) {
+
 		let src = element.getAttribute('src')
-		ajax.get(src, {include: element}, function(result){
-			this.include.innerHTML = result
-			this.include.removeAttribute('src')
+		element.removeAttribute('src')
+
+		ajax.get(src, element, function(result) {
+			element.innerHTML = result
 			config()
 			if($(result).find('include').length != 0) include()
 		})
 	}
-}
-
-function config() {
-	$('.carousel').carousel()
 }
