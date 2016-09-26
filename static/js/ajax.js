@@ -25,5 +25,5 @@ Ajax.prototype.get = function(url, context, callback) {
 }
 
 function error(xhr,status,error) {
-	console.log(status + '-->' + error)
+	console.log('[Error] ' + status + '-->' + error)
 }
