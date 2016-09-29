@@ -9,7 +9,7 @@ app.controller("thumb_controller", function($scope) {
   ]
 })
 
-app.directive('repeat-tag', function() {
+app.directive('thumbnail', function() {
 	return {
  		restrict: 'E',
  		scope: {src: '@'},
