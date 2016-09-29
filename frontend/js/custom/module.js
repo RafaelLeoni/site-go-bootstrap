@@ -1,6 +1,7 @@
 /* Create Modules */
 angular.module('BancaStoreController', [])
 
+/* App Config */
 var app = angular.module('bancastore', [
   'ngRoute',
   'BancaStoreController'
@@ -18,7 +19,7 @@ var app = angular.module('bancastore', [
   })
 
   $routeProvider.when('/404', {
-    templateUrl:'public/html/404.html',
+    templateUrl:'public/html/partials/404.html',
   })
 
   $routeProvider.otherwise({

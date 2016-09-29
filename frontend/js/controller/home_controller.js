@@ -2,10 +2,10 @@ angular.module("BancaStoreController")
 
 .controller("HomeController", function($scope) {
   $scope.records = [
-  	'public/fonts/image/home-icon.png',
-    'public/fonts/image/about-us-icon.png',
-    'public/fonts/image/newspaper-icon.png',
-    'public/fonts/image/contact-icon.png'
+  	{src: 'public/fonts/image/livros.png', title: 'Livros', description: 'Encontre seu livro aqui'},
+    {src: 'public/fonts/image/revistas.png', title: 'Revistas', description: 'Encontre sua revista aqui'},
+    {src: 'public/fonts/image/quadrinhos.png', title: 'Quadrinhos', description: 'Encontre seu quadrinho aqui'},
+    {src: 'public/fonts/image/jornal.png', title: 'Jornais', description: 'Encontre seu jornal aqui'}
   ]
 
   $scope.items = [
