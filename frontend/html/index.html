@@ -8,6 +8,8 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
+  <base href="/">
+
   <title>Banca Store</title>
 
   <!-- CSS -->
@@ -21,16 +23,16 @@
 	<script src="/public/js/bootstrap.min.js"></script>
 
 	<!-- AngularJS -->
-	<script src="/public/js/angular.min.js"></script>
-	<script src="/public/js/angular-route.min.js"></script>
+	<script src="/public/js/angular/angular.min.js"></script>
+	<script src="/public/js/angular/angular-route.min.js"></script>
 
 	<!-- Custom scripts -->
-	<script src="/public/js/ajax.js"></script>
-	<script src="/public/js/module.js"></script>
-	<script src="/public/js/init.js"></script>
+	<script src="/public/js/custom/ajax.js"></script>
+	<script src="/public/js/custom/module.js"></script>
+	<script src="/public/js/custom/init.js"></script>
 	
 	<!-- Controller -->
-	<script src="/public/js/controller/main_controller.js"></script>
+	<script src="/public/js/controller/home_controller.js"></script>
 
 </head>
 
@@ -44,7 +46,6 @@
 		<!-- Page Content -->
     <div class="row">
     	 <div ng-view="" data-autoscroll></div>
-			<!-- <div ng-include="'/public/html/partials/main.html'"></div> -->
     </div>
 	
 		<!-- footer -->

@@ -1,7 +1,7 @@
 package main
 
 import (
-	"encoding/json"
+	//"encoding/json"
 	"html/template"
 	"log"
 	"net/http"
@@ -19,7 +19,7 @@ func main() {
 	http.Handle("/public/", http.StripPrefix("/public/", fs))
 
 	http.HandleFunc("/", index)
-	http.HandleFunc("/login", login)
+	//http.HandleFunc("/login", login)
 	http.ListenAndServe(":3000", nil)
 }
 
@@ -29,11 +29,11 @@ func index(w http.ResponseWriter, r *http.Request) {
 	t.Execute(w, nil)
 }
 
-func login(w http.ResponseWriter, r *http.Request) {
-	err := json.NewDecoder(r.Body).Decode(&m)
-	defer check(err)
-	json.NewEncoder(w).Encode(m)
-}
+// func login(w http.ResponseWriter, r *http.Request) {
+// 	err := json.NewDecoder(r.Body).Decode(&m)
+// 	defer check(err)
+// 	json.NewEncoder(w).Encode(m)
+// }
 
 func check(err error) {
 	if err != nil {
