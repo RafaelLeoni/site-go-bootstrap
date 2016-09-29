@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Banca Store</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="/public/css/bootstrap.min.css"/>
+  <link rel="stylesheet" type="text/css" href="/public/css/homepage.css"/>
+
+  <!-- jquery -->
+	<script src="/public/js/jquery.js"></script>
+
+	<!-- Bootstrap Core JavaScript -->
+	<script src="/public/js/bootstrap.min.js"></script>
+
+	<!-- AngularJS -->
+	<script src="/public/js/angular.min.js"></script>
+	<script src="/public/js/angular-route.min.js"></script>
+
+	<!-- Custom scripts -->
+	<script src="/public/js/ajax.js"></script>
+	<script src="/public/js/module.js"></script>
+	<script src="/public/js/init.js"></script>
+	
+	<!-- Controller -->
+	<script src="/public/js/controller/main_controller.js"></script>
+
+</head>
+
+<body ng-app="bancastore">
+	<div class="container">
+		<!-- Navbar -->
+		<div class="row">
+			<div ng-include="'/public/html/partials/nav.html'"></div>
+		</div>
+
+		<!-- Page Content -->
+    <div class="row">
+    	 <div ng-view="" data-autoscroll></div>
+			<!-- <div ng-include="'/public/html/partials/main.html'"></div> -->
+    </div>
+	
+		<!-- footer -->
+		<div class="row">
+			<hr>
+			<p>Copyright © Rafael Leoni 2016</p>
+		</div>
+	</div>
+</body>
+
+</html>
