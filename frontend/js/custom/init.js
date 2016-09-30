@@ -1,4 +1,4 @@
-setTimeout(() => config(), 100)
+setTimeout(() => config(), 300)
 
 function config() {
 	$('.carousel').carousel()

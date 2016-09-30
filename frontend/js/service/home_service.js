@@ -20,10 +20,10 @@ angular.module('BancaStoreService')
   				
   				if (data.erro != null) {
   					error(data.erro)
-  				} else if (data.resposta == null) {
+  				} else if (data.length == 0) {
             error('NULL response.')
           } else {
-          	success(data.imagens)
+          	success(data)
           }
 
   			})
