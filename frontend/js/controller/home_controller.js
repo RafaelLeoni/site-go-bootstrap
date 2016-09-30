@@ -26,13 +26,6 @@ angular.module('BancaStoreController')
       buscarImagens()
     }
 
-    // $scope.imagens = [
-    // 	{url: 'public/fonts/image/livros.png', titulo: 'Livros', descricao: 'Encontre seu livro aqui'},
-    //   {url: 'public/fonts/image/revistas.png', titulo: 'Revistas', descricao: 'Encontre sua revista aqui'},
-    //   {url: 'public/fonts/image/quadrinhos.png', titulo: 'Quadrinhos', descricao: 'Encontre seu quadrinho aqui'},
-    //   {url: 'public/fonts/image/albuns.png', titulo: 'Albuns e Figurinhas', descricao: 'Encontre seu álbum aqui'}
-    // ]
-
     $scope.items = [
     	{src: 'public/fonts/image/carousel-item.png', description: 'Imagem 1'},
     	{src: 'public/fonts/image/carousel-item.png', description: 'Imagem 2'},
