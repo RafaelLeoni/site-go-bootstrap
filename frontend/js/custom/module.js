@@ -1,10 +1,12 @@
 /* Create Modules */
 angular.module('BancaStoreController', [])
+angular.module('BancaStoreService', [])
 
 /* App Config */
 var app = angular.module('bancastore', [
   'ngRoute',
-  'BancaStoreController'
+  'BancaStoreController',
+  'BancaStoreService'
 ])
 
 .config(function($routeProvider,$locationProvider){ 

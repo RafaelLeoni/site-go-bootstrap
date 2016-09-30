@@ -41,13 +41,13 @@
 
 <!-- Thumbnail -->
 <div class="row">
-  <div ng-repeat="image in records">
+  <div ng-repeat="imagem in imagens">
     <div class="col-sm-3 col-md-3 col-lg-3">
       <div class="thumbnail">
-        <img src="{{image.src}}">
+        <img src="{{imagem.url}}">
         <div class="caption">
-          <h3>{{image.title}}</h3>
-          <p>{{image.description}}</p>
+          <h4>{{imagem.titulo}}</h4>
+          <p>{{imagem.descricao}}</p>
           <p><a href="#" class="btn btn-success pull-right" role="button">Mais</a></p>
         </div>
       </div>
