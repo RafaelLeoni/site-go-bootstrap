@@ -14,7 +14,7 @@
 
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="/public/css/bootstrap.min.css"/>
-  <link rel="stylesheet" type="text/css" href="/public/css/homepage.css"/>
+  <link rel="stylesheet" type="text/css" href="/public/css/site.css"/>
 
   <!-- jquery -->
 	<script src="/public/js/jquery.js"></script>
@@ -40,20 +40,20 @@
 </head>
 
 <body ng-app="bancastore">
-	<div class="container">
-		<!-- Navbar -->
-		<div class="row">
-			<div ng-include="'/public/html/partials/nav.html'"></div>
-		</div>
+	<!-- Navbar -->
+	<div class="row">
+		<div ng-include="'/public/html/partials/nav.html'"></div>
+	</div>
 
-		<!-- Page Content -->
-    <div class="row">
-    	<div ng-view="" data-autoscroll></div>
-    </div>
-	
-		<!-- footer -->
-		<div class="row footer">
-			<hr>
+	<!-- Page Content -->
+  <div class="row inherit-height">
+  	<div ng-view="" class="inherit-height" data-autoscroll></div>
+  </div>
+
+	<!-- footer -->
+	<div class="row footer">
+		<hr>
+		<div class="container">
 			<p>Copyright © Rafael Leoni 2016</p>
 		</div>
 	</div>

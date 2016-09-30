@@ -28,11 +28,13 @@ func (homeC *HomeController) BuscarItems(w http.ResponseWriter, r *http.Request)
 
 func (homeC *HomeController) BuscarImagens(w http.ResponseWriter, r *http.Request) {
 
-	imagem1 := model.Imagem{"public/fonts/image/carousel-item.png", "", "Imagem 1"}
-	imagem2 := model.Imagem{"public/fonts/image/carousel-item.png", "", "Imagem 2"}
-	imagem3 := model.Imagem{"public/fonts/image/carousel-item.png", "", "Imagem 3"}
+	imagem1 := model.Imagem{"public/fonts/image/logo.jpg", "", "Logo"}
+	imagem2 := model.Imagem{"public/fonts/image/banca-carousel-2.jpg", "", "Imagem 2"}
+	imagem3 := model.Imagem{"public/fonts/image/banca-carousel-3.jpg", "", "Imagem 3"}
+	imagem4 := model.Imagem{"public/fonts/image/banca-carousel-4.jpg", "", "Imagem 4"}
+	imagem5 := model.Imagem{"public/fonts/image/banca-carousel-5.jpg", "", "Imagem 5"}
 
-	imagens := []model.Imagem{imagem1, imagem2, imagem3}
+	imagens := []model.Imagem{imagem1, imagem2, imagem3, imagem4, imagem5}
 	json.NewEncoder(w).Encode(imagens)
 
 }
