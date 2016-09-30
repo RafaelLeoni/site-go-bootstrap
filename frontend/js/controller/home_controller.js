@@ -6,10 +6,20 @@ angular.module('BancaStoreController')
   'HomeService',
   function($scope,$routeParams,HomeService) {
 
+    var buscarItems = function() {
+      HomeService.buscarItems(
+        function(items) {
+          $scope.items = items
+        },
+
+        function(erro) {
+          $scope.erro = erro
+        }
+      )
+    }
+
     var buscarImagens = function() {
-
       HomeService.buscarImagens(
-
         function(imagens) {
           $scope.imagens = imagens
         },
@@ -17,20 +27,13 @@ angular.module('BancaStoreController')
         function(erro) {
           $scope.erro = erro
         }
-
       )
-
     }
 
     {
+      buscarItems()
       buscarImagens()
     }
-
-    $scope.items = [
-    	{src: 'public/fonts/image/carousel-item.png', description: 'Imagem 1'},
-    	{src: 'public/fonts/image/carousel-item.png', description: 'Imagem 2'},
-    	{src: 'public/fonts/image/carousel-item.png', description: 'Imagem 3'}
-    ]
 
   }
 ])

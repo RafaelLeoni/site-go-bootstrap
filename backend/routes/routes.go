@@ -10,10 +10,12 @@ func InitRoutes() {
 
 	//Inicia controllers
 	init := controller.NewMainController()
-	imagem := controller.NewImagemController()
+	home := controller.NewHomeController()
 
-	//define as rotas
+	//Define as rotas
 	http.HandleFunc("/", init.Init)
-	http.HandleFunc("/banca/home/imagens", imagem.BuscarImagens)
+
+	http.HandleFunc("/banca/home/items", home.BuscarItems)
+	http.HandleFunc("/banca/home/imagens", home.BuscarImagens)
 
 }

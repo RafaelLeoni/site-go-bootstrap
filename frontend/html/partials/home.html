@@ -8,21 +8,21 @@
 
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img src="{{items[0].src}}">
+      <img src="{{imagens[0].url}}">
       <div class="carousel-caption">
-        {{items[0].description}}
+        {{imagens[0].descricao}}
       </div>
     </div>
     <div class="item">
-      <img src="{{items[1].src}}">
+      <img src="{{imagens[1].url}}">
       <div class="carousel-caption">
-        {{items[1].description}}
+        {{imagens[1].descricao}}
       </div>
     </div>
     <div class="item">
-      <img src="{{items[2].src}}">
+      <img src="{{imagens[2].url}}">
       <div class="carousel-caption">
-        {{items[2].description}}
+        {{imagens[2].descricao}}
       </div>
     </div>
   </div>
@@ -41,13 +41,13 @@
 
 <!-- Thumbnail -->
 <div class="row">
-  <div ng-repeat="imagem in imagens">
+  <div ng-repeat="item in items">
     <div class="col-sm-3 col-md-3 col-lg-3">
       <div class="thumbnail">
-        <img src="{{imagem.url}}">
+        <img src="{{item.url}}">
         <div class="caption">
-          <h4>{{imagem.titulo}}</h4>
-          <p>{{imagem.descricao}}</p>
+          <h4>{{item.titulo}}</h4>
+          <p>{{item.descricao}}</p>
           <p><a href="#" class="btn btn-success pull-right" role="button">Mais</a></p>
         </div>
       </div>
