@@ -21,7 +21,12 @@ var app = angular.module('bancastore', [
   })
 
   $routeProvider.when('/sobre', {
-    templateUrl:'public/html/partials/sobre.html',
+    templateUrl:'public/html/partials/sobre.html'
+  })
+
+  $routeProvider.when('/produtos', {
+    templateUrl:'public/html/partials/produtos.html',
+    controller: 'ProdutosController'
   })
 
   $routeProvider.when('/404', {
