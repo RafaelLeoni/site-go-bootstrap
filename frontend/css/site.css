@@ -21,10 +21,6 @@ body {
     opacity: 0.8;
 }
 
-.inherit-height {
-    height: inherit;
-}
-
 /* Home Page Carousel */
 .carousel {
     height: 50%;
