@@ -20,5 +20,6 @@ func InitRoutes() {
 	http.HandleFunc("/banca/home/imagens", home.BuscarImagens)
 
 	http.HandleFunc("/banca/produtos/categorias", produto.BuscarCategorias)
+	http.HandleFunc("/banca/produtos/produtos", produto.BuscarProdutos)
 
 }

@@ -72,14 +72,6 @@ body {
     color: #333;
 }
 
-/* Página Produtos */
-.list-group-item:hover { 
-    color: #555;
-    text-decoration: none;
-    background-color: #f5f5f5;
-    cursor: pointer;
-}
-
 /* Footer Styles */
 .footer {
     margin: 50px 0;
