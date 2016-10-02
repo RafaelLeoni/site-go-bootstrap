@@ -39,6 +39,10 @@ body {
     background-size: cover;
 }
 
+.obj-wrapper {
+    height: 100%
+}
+
 /* Home Page Thumbnail */
 .caption {
     height: 130px;
@@ -86,7 +90,7 @@ body {
         margin-bottom: 15px;
     }
 
-    header.carousel .carousel {
+    .carousel .carousel {
         height: 70%;
     }
 }
