@@ -2,11 +2,6 @@ package model
 
 import ()
 
-type Categoria struct {
-	Nome       string `json:"nome"`
-	Quantidade int32  `json:"qtd"`
-}
-
 type Produto struct {
 	Nome      string  `json:"nome"`
 	Url       string  `json:"imgUrl"`

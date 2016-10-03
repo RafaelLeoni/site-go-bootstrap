@@ -2,21 +2,21 @@
 	<div class="container">
 	<!-- Brand and toggle get grouped for better mobile display -->
 		<div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-menu">
 				<span class="sr-only">Toggle navigation</span>
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="home"><span class="glyphicon glyphicon-home" aria-hidden="true"> Home</span></a>
+			<a class="navbar-brand" href="home"><span class="glyphicon glyphicon-home"> Home</span></a>
 		</div>
 		<!-- Collect the nav links, forms, and other content for toggling -->
-		<div class="collapse navbar-collapse" id="navbar-collapse-1">
+		<div class="collapse navbar-collapse" id="nav-menu">
 			<ul class="nav navbar-nav">
-				<li><a href="sobre">Sobre</a></li>
-				<li><a href="produtos">Produtos</a></li>
-				<li><a href="#">Localização</a></li>
-				<li><a href="#">Contato</a></li>
+				<li><a href="sobre" data-toggle="collapse" data-target="#nav-menu">Sobre</a></li>
+				<li><a href="produtos" data-toggle="collapse" data-target="#nav-menu">Produtos</a></li>
+				<li><a href="#" data-toggle="collapse" data-target="#nav-menu">Localização</a></li>
+				<li><a href="#" data-toggle="collapse" data-target="#nav-menu">Contato</a></li>
 			</ul>
 		</div>
 		<!-- /.navbar-collapse -->
