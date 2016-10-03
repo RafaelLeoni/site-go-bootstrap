@@ -42,21 +42,20 @@
 </head>
 
 <body ng-app="bancastore">
+	<div class="container">
 	<!-- Navbar -->
-	<div class="row">
-		<div ng-include="'/public/html/partials/nav.html'"></div>
-	</div>
+		<div class="row">
+			<div ng-include="'/public/html/partials/nav.html'"></div>
+		</div>
 
-	<!-- Page Content -->
-  <div class="row obj-wrapper">
-  	<div ng-view="" class="obj-wrapper" data-autoscroll></div>
-  </div>
+		<!-- Page Content -->
+	  <div class="row obj-wrapper">
+	  	<div ng-view="" class="obj-wrapper" data-autoscroll></div>
+	  </div>
 
-	<!-- footer -->
-	<div class="row footer">
-		<div class="container">
-			<hr>
-			<p>Copyright © Rafael Leoni 2016</p>
+		<!-- footer -->
+		<div class="row footer">
+			<hr><p class="text-center">Copyright © Rafael Leoni 2016</p>
 		</div>
 	</div>
 </body>
