@@ -2,9 +2,9 @@ angular.module('BancaStoreController')
 
 .controller('ProdutosController', [
   '$scope',
-  '$routeParams',
+  '$rootScope',
   'ProdutoService',
-  function($scope,$routeParams,ProdutoService) {
+  function($scope,$rootScope,ProdutoService) {
 
   	var buscarCategorias = function() {
   		ProdutoService.buscarCategorias(
@@ -21,6 +21,7 @@ angular.module('BancaStoreController')
   		ProdutoService.buscarProdutos(
   			function(produtos) {
   				$scope.produtos = produtos
+          $scope.backupProdutos = produtos
   				$scope.getEstrelasCheias = function(produto) {
   					return new Array(produto.nota)
   				}
@@ -33,6 +34,21 @@ angular.module('BancaStoreController')
   			}
   		)
   	}
+
+    $scope.open = function(produto) {
+      $rootScope.produtoId = produto.nome
+      $('#detalheModal').modal()
+    }
+
+    $scope.filtrar = function() {
+      var filtro = []
+      $scope.produtos = $scope.backupProdutos
+      for (produto of $scope.produtos) {
+        if (produto.nome.toLowerCase().includes($scope.query.toLowerCase()))
+          filtro.push(produto)
+      }
+      $scope.produtos = filtro
+    }
 
   	{
   		buscarCategorias()

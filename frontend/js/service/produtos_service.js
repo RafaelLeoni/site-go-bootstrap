@@ -2,8 +2,7 @@ angular.module('BancaStoreService')
 
 .factory('ProdutoService', [
   '$http',
-  '$rootScope',
-  function($http,$rootScope) {
+  function($http) {
 
   	function ProdutoServiceObject() {
 

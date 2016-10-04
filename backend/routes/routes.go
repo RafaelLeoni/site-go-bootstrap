@@ -22,4 +22,6 @@ func InitRoutes() {
 	http.HandleFunc("/banca/produtos/categorias", produto.BuscarCategorias)
 	http.HandleFunc("/banca/produtos/produtos", produto.BuscarProdutos)
 
+	http.HandleFunc("/banca/produto/detalhe/:id", produto.BuscarDetalheProduto)
+
 }

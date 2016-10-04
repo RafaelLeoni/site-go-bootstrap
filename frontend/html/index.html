@@ -34,10 +34,12 @@
 	<!-- Controller -->
 	<script src="/public/js/controller/home_controller.js"></script>
 	<script src="/public/js/controller/produtos_controller.js"></script>
+	<script src="/public/js/controller/detalhe_controller.js"></script>
 
 	<!-- Service -->
 	<script src="/public/js/service/home_service.js"></script>
 	<script src="/public/js/service/produtos_service.js"></script>
+	<script src="/public/js/service/detalhe_service.js"></script>
 
 </head>
 
@@ -52,6 +54,9 @@
 	  <div class="row obj-wrapper">
 	  	<div ng-view="" class="obj-wrapper" data-autoscroll></div>
 	  </div>
+
+	  <!-- Modal detalhe do Produto -->
+  	<div ng-include="'/public/html/partials/detalhe.html'"></div>
 
 		<!-- footer -->
 		<div class="row footer">

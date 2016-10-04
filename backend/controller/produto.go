@@ -39,3 +39,12 @@ func (produtoC *ProdutoController) BuscarProdutos(w http.ResponseWriter, r *http
 	json.NewEncoder(w).Encode(produtos)
 
 }
+
+func (produtoC *ProdutoController) BuscarDetalheProduto(w http.ResponseWriter, r *http.Request, ps httprouter.Params) {
+
+	nome := ps.ByName("id")
+
+	produto := model.Produto{nome, "public/fonts/image/320x150.png", 54.00, 5, "Descrição completa do produto"}
+	json.NewEncoder(w).Encode(produto)
+
+}
